@@ -16,9 +16,14 @@ call plug#begin('~/.vim/plugged')
 " plugins for specific languages
 Plug 'sophacles/vim-processing'
 Plug 'pangloss/vim-javascript'
+Plug 'othree/html5.vim'
+Plug 'JulesWang/css.vim'
 
 " prettier
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
+
+" git
+Plug 'airblade/vim-gitgutter'
 
 " theme
 Plug 'w0ng/vim-hybrid'
