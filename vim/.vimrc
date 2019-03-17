@@ -7,9 +7,11 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
+
 """"""""""""""""""""""""""""
 " plugins
 """"""""""""""""""""""""""""
+
 call plug#begin('~/.vim/plugged')
 
 " plugins for specific languages
@@ -17,6 +19,7 @@ Plug 'sophacles/vim-processing'
 Plug 'pangloss/vim-javascript'
 Plug 'othree/html5.vim'
 Plug 'JulesWang/css.vim'
+Plug 'davidhalter/jedi-vim'
 
 " prettier
 Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
@@ -24,20 +27,39 @@ Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 " git
 Plug 'airblade/vim-gitgutter'
 
+" autocomplete
+Plug 'lifepillar/vim-mucomplete'
+
 " theme
 Plug 'w0ng/vim-hybrid'
 
 call plug#end()
 
+
 """"""""""""""""""""""""""""
 " settings
 """"""""""""""""""""""""""""
-colorscheme hybrid	" theme
-set autoindent		" use indentation of previous line
-set background=dark	" theme
-set colorcolumn=81	" highlight lines longer than 80 chars
-set hidden		" alllow hiding unsaved buffers
-set hlsearch		" highlight the search query
+
+" theme
+colorscheme hybrid
+set background=dark
+
+" interface
 set number		" show line numbers
+set colorcolumn=81
 set showcmd		" show commands in the last line
+set hidden		" alllow hiding unsaved buffers
+
+" search
+set hlsearch		" highlight the search query
 set smartcase		" only use case sensitive search when uppercase
+
+" tabs
+set autoindent		" use indentation of previous line
+set expandtab		" tabs are spaces
+set tabstop=2		" tab size when pressing tab
+set shiftwidth=2	" tab size when indenting
+
+" autocomplete
+set completeopt=menuone,noinsert
+
