@@ -1,0 +1,20 @@
+[user]
+  name = Corbin Muraro
+  email = corbinmuraro@gmail.com
+  username = corbinmuraro
+[core]
+  excludesfile = ~/.gitignore
+[alias]
+  a = add
+  aa = add --all
+  ap = add -p
+  b = branch
+  c = commit
+  co = checkout
+  com = checkout master
+  d = diff
+  l = log --graph --all --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  pr = pull --rebase
+  pom = push origin master
+  ri = rebase -i
+  s = status -sb
