@@ -7,7 +7,6 @@ if empty(glob('~/.vim/autoload/plug.vim'))
   autocmd VimEnter * PlugInstall | source $MYVIMRC
 endif
 
-
 """"""""""""""""""""""""""""
 " plugins
 """"""""""""""""""""""""""""
@@ -33,8 +32,12 @@ call plug#end()
 """"""""""""""""""""""""""""
 " settings
 """"""""""""""""""""""""""""
-set background=dark	" theme
 colorscheme hybrid	" theme
-set number		" show line numbers
+set autoindent		" use indentation of previous line
+set background=dark	" theme
+set colorcolumn=81	" highlight lines longer than 80 chars
+set hidden		" alllow hiding unsaved buffers
 set hlsearch		" highlight the search query
-set colorcolumn=81	" highlight lines longer than 80 chars 
+set number		" show line numbers
+set showcmd		" show commands in the last line
+set smartcase		" only use case sensitive search when uppercase
