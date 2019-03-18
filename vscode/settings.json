@@ -1,0 +1,69 @@
+{
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": true,
+    "editor.minimap.enabled": false,
+    "files.eol": "\n",
+    "git.ignoreLimitWarning": true,
+    "go.autocompleteUnimportedPackages": true,
+    "go.gocodeAutoBuild": false,
+    "search.exclude": {
+        "client/samsara-common/": true,
+        "client/backend-client/": true,
+        "mobile/SamsaraDriver/copied-ts/": true
+    },
+    "stylelint.enable": true,
+    "css.validate": false,
+    "prettier.typescriptEnable": [
+        "typescript",
+        "typescriptreact"
+    ],
+    "prettier.trailingComma": "all",
+    "prettier.cssEnable": ["css"],
+    "prettier.graphqlEnable": ["graphql"],
+    "typescript.tsdk": "./node_modules/typescript/lib",
+    "[css]": {
+        "editor.formatOnSave": true
+    },
+    "[graphql]": {
+        "editor.formatOnSave": true
+    },
+    "[typescript]": {
+        "editor.formatOnSave": true
+    },
+    "[typescriptreact]": {
+        "editor.formatOnSave": true
+    },
+    "[javascript]": {
+        "editor.formatOnSave": true
+    },
+    "[javascriptreact]": {
+        "editor.formatOnSave": true
+    },
+    "[terraform]": {
+        "editor.formatOnSave": true
+    },
+    "emmet.includeLanguages": {
+        "javascript": "javascriptreact"
+    },
+    "emmet.showExpandedAbbreviation": "never",
+    "emmet.triggerExpansionOnTab": true,
+    "files.associations": {
+        "*.jenkins": "groovy",
+        "*.tf": "terraform",
+        "*.tfvars": "terraform"
+    },
+    "graphql.useLanguageServer": true,
+    "gitlens.keymap": "alternate",
+    "window.zoomLevel": 0,
+    "gitlens.advanced.messages": {
+        "suppressCommitHasNoPreviousCommitWarning": false,
+        "suppressCommitNotFoundWarning": false,
+        "suppressFileNotUnderSourceControlWarning": false,
+        "suppressGitVersionWarning": false,
+        "suppressLineUncommittedWarning": false,
+        "suppressNoRepositoryWarning": false,
+        "suppressResultsExplorerNotice": false,
+        "suppressShowKeyBindingsNotice": true
+    },
+    "gitlens.historyExplorer.enabled": true
+}
