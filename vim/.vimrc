@@ -45,21 +45,26 @@ colorscheme hybrid
 set background=dark
 
 " interface
-set number		" show line numbers
+set number		      " show line numbers
 set colorcolumn=81
-set showcmd		" show commands in the last line
-set hidden		" alllow hiding unsaved buffers
+set showcmd		      " show commands in the last line
+set hidden		      " alllow hiding unsaved buffers
+
+" backspace
+set backspace=2     " backspace over everything in insert mode
 
 " search
-set hlsearch		" highlight the search query
-set smartcase		" only use case sensitive search when uppercase
+set hlsearch		    " highlight the search query
+set smartcase		    " only use case sensitive search when uppercase
 
 " tabs
-set autoindent		" use indentation of previous line
-set expandtab		" tabs are spaces
-set tabstop=2		" tab size when pressing tab
-set shiftwidth=2	" tab size when indenting
+set autoindent      " use indentation of previous line
+set expandtab		    " tabs are spaces
+set tabstop=2		    " tab size when pressing tab
+set shiftwidth=2	  " tab size when indenting
 
 " autocomplete
 set completeopt=menuone,noinsert
+
+
 
