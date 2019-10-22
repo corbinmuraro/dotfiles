@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "running mac setup"
 
 if [ ! -f ~/.ssh/id_rsa.pub ]; then
@@ -27,6 +29,9 @@ echo "Git config"
 git config --global user.name "corbin muraro"
 git config --global user.email corbinmuraro@gmail.com
 
+echo "Installing stow..."
+brew install stow
+
 apps=(
   bowtie
   dropbox
@@ -42,7 +47,6 @@ apps=(
 echo "Installing applications..."
 brew cask install --appdir="/Applications" ${apps[@]}
 
-brew cask cleanup
 brew cleanup
 
 echo "Setting up Mac settings..."
