@@ -17,6 +17,7 @@ call plug#begin('~/.vim/plugged')
 " plugins for specific languages
 Plug 'sophacles/vim-processing'
 Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
 Plug 'othree/html5.vim'
 Plug 'JulesWang/css.vim'
 Plug 'davidhalter/jedi-vim'
