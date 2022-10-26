@@ -43,7 +43,7 @@ apps=(
 )
 
 echo "Installing applications..."
-brew cask install --appdir="/Applications" ${apps[@]}
+brew install --cask --appdir="/Applications" ${apps[@]}
 
 brew cleanup
 
